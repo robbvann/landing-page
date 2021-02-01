@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>BadWolf Web Developments</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-image: url(/images/starry-mountain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .col-sm-4 {
+    outline: #474e5d;
+    outline-style: solid;
+    outline-width: .5px;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+  text-align: left;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">BadWolf Web Developments</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">BadWolf Web Developments</h3>
+  <img src="images/f.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo" width="150" height="150">
+  <h3></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-left">
+  <div class="flex-container">
+    <div class="flex-item-left"><img src="images/pp.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Picture" width="350" height="350"></div>
+    <div class="flex-item-right"><h3 class="margin"><br><br>My name is Danielle Smith.</h3>
+  <p>I created BadWolf Web Developments for people like you who want to see your business grow on the internet. I specialize in WordPress, eCommerce and small business pages. I charge $36/hr for my services but offer my friendship for free.</p></div>
+</div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Examples of My Work</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="https://thatgoodstore.wpcomstaging.com/" p>This is an eCommerce site I did on WordPress. This is a great example of theme manipulation. A website like this starts at $1,000 for a small business, hourly rates for maintenance.</p>
+      <img src="images/wp.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://adventure-project.herokuapp.com/?fbclid=IwAR0Xbz4VRdwi2NaKcRptxltTgME15H0ClMHZf73m1qdWNxXi2V6IiQ5eg64" p>This is a full website built from scratch with Python and Flask for back end, for those of you who are looking for something more personal yet fully functional. I would charge an hourly rate.</p>
+      <img src="images/fspp.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://badwolf910.github.io/cambodian_blog/?fbclid=IwAR1gnqYrtOsgbfvzQmrUbi-8EYx3AL2FmFvrylLxmAGqNUj2aRFsZE5eERE" p>Here we have an example of a blog, front end only. An hourly charge is all this would need.</p><br><br>
+      <img src="images/cb.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p><a href="https://www.w3schools.com"></a></p> 
+</footer>
+
+</body>
+</html>
