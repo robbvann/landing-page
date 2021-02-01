@@ -9,83 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-image: url(/images/starry-mountain.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .col-sm-4 {
-    outline: #474e5d;
-    outline-style: solid;
-    outline-width: .5px;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  * {
-  box-sizing: border-box;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
-}
-
-.flex-item-left {
-  padding: 10px;
-  flex: 50%;
-}
-
-.flex-item-right {
-  padding: 10px;
-  flex: 50%;
-  text-align: left;
-}
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
-  }
-}
-  </style>
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -102,9 +27,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Examples</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -112,13 +37,13 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">BadWolf Web Developments</h3>
+  <h1 class="margin">BadWolf Web Developments</h1>
   <img src="images/f.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo" width="150" height="150">
   <h3></h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-left">
+<div id="about" class="container-fluid bg-2 text-left">
   <div class="flex-container">
     <div class="flex-item-left"><img src="images/pp.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Picture" width="350" height="350"></div>
     <div class="flex-item-right"><h3 class="margin"><br><br>My name is Danielle Smith.</h3>
@@ -127,7 +52,7 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div id="examples" class="container-fluid bg-3 text-center">    
   <h3 class="margin">Examples of My Work</h3><br>
   <div class="row">
     <div class="col-sm-4">
@@ -143,12 +68,57 @@
       <img src="images/cb.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
   </div>
+
+  <div class="row">
+
+    <div class="col-sm-4"> 
+      <a href="https://badwolf910.github.io/beaches/" p>What portfolio isn't complete without a landing page? This website is for a small business that just wants to get down to business while still being stylish. Hourly rates apply.</p>
+      <img src="images/bbv.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://badwolf910.github.io/dog-grooming/" p>A cute little business page, styled with just the right vibe. Hourly rates apply.</p><br><br><br>
+      <img src="images/dg.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://badwolf910.github.io/landing-page/" p>Another landing page with some styling effects. Simple yet elegant. Hourly rates apply.</p><br><br>
+      <img src="images/dswd.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p><a href="https://www.w3schools.com"></a></p> 
+  <section>
+    <div id="contact" class="container">
+      <h1>To schedule a time to discuss your website, please give me the following information:</h1>
+      <form action="https://formspree.io/f/xeqpdepz" method="POST" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
