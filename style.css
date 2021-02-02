@@ -1,3 +1,6 @@
+/* use Sass instead its much easier and will save hours. */
+/* https://getbootstrap.com/docs/4.0/getting-started/theming/ */
+
 body {
   font: 20px Montserrat, sans-serif;
   line-height: 1.8;
@@ -155,3 +158,14 @@ button[type='submit']:hover {
     pointer-events: none;
   }
 }
+
+.mt-4 {
+  margin-top:100px;
+}
+.pt-4 {
+  padding-top:100px;
+}
+.pl-1 {
+  padding-left:10px;
+}
+/* padding classes bootstrap 4 has them built in - you might have rebuild your whole site to use though...lol!*/

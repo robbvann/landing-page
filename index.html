@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- I'm in your code touching all your stuff....hows it feel? You love letting me have a peak...you always have. kisses!-->
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>BadWolf Web Developments</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- you should be using the latest version of bootstrap here  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,16 +19,20 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+
+<!-- you need to account for mobile here in the nav - check your break points in the css-->
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+    <div class="col-12">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">BadWolf Web Developments</a>
+      <a class="navbar-brand" style="overflow: hidden;" href="#">BadWolf Web Developments</a>
     </div>
+  </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About Me</a></li>
@@ -33,32 +41,37 @@
       </ul>
     </div>
   </div>
+  
 </nav>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h1 class="margin">BadWolf Web Developments</h1>
+  <!-- remove this as you already have the name of your "company" in the nav <h1 class="margin">BadWolf Web Developments</h1> --> 
   <img src="images/f.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Logo" width="150" height="150">
   <h3></h3>
 </div>
 
 <!-- Second Container -->
+<!-- tighten this section up. bring the image image and text closer together, you're gorgeous but it looks like the text is running away from you. -->
 <div id="about" class="container-fluid bg-2 text-left">
   <div class="flex-container">
     <div class="flex-item-left"><img src="images/pp.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Picture" width="350" height="350"></div>
-    <div class="flex-item-right"><h3 class="margin"><br><br>My name is Danielle Smith.</h3>
+    <!-- I removed your 1994 <br> tags cause come on.... bootstrap has padding / margin classes use them -->
+    <div class="flex-item-right mt-4"><h3 class="margin">My name is Danielle Smith.</h3>
   <p>I created BadWolf Web Developments for people like you who want to see your business grow on the internet. I specialize in WordPress, eCommerce and small business pages. I charge $36/hr for my services but offer my friendship for free.</p></div>
 </div>
 </div>
 
 <!-- Third Container (Grid) -->
-<div id="examples" class="container-fluid bg-3 text-center">    
+<div id="examples" class="container-fluid bg-3 text-center">
+  <!-- you should give this a better text treatment-->    
   <h3 class="margin">Examples of My Work</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <a href="https://thatgoodstore.wpcomstaging.com/" p>This is an eCommerce site I did on WordPress. This is a great example of theme manipulation. A website like this starts at $1,000 for a small business, hourly rates for maintenance.</p>
+    <!-- you should make your whole block clickable not just the text. see who i used the "a" tag instead of the div tag-->
+    <a href="https://thatgoodstore.wpcomstaging.com/" class="col-sm-4">
+    <p>This is an eCommerce site I did on WordPress. This is a great example of theme manipulation. A website like this starts at $1,000 for a small business, hourly rates for maintenance.</p>
       <img src="images/wp.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
-    </div>
+    </a>
     <div class="col-sm-4"> 
       <a href="https://adventure-project.herokuapp.com/?fbclid=IwAR0Xbz4VRdwi2NaKcRptxltTgME15H0ClMHZf73m1qdWNxXi2V6IiQ5eg64" p>This is a full website built from scratch with Python and Flask for back end, for those of you who are looking for something more personal yet fully functional. I would charge an hourly rate.</p>
       <img src="images/fspp.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
@@ -87,6 +100,9 @@
 </div>
 
 <!-- Footer -->
+
+<!-- this form is terrible - sorry. no validation, once a bot finds this, you screwed. A captcha might be too advanced for you - try a Honey Pot on the form and please get 
+  rid of whatever form componay your using and use phpmailer. -->
 <footer class="container-fluid bg-4 text-center">
   <section>
     <div id="contact" class="container">
